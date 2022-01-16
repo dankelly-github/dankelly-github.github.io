@@ -95,9 +95,11 @@ nav a:link, a:visited {
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
+	transform: scale(1.0);
 }
 nav a:hover, a:active {
 	background-color: #38A1CE;
+	transform: scale(1.05); 
 }
 
 .aboutText h2 {
