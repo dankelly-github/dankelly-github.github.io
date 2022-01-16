@@ -1,291 +1,154 @@
 <!DOCTYPE html>
+
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
 
-@font-face
-{
-    font-family:'Comfortaa-Regular';
-    src:url('Comfortaa-Regular.ttf');
-}
-
-* {
-  box-sizing: border-box;
-}
-html{
-    height: 100%;
-    margin: auto;
-    width: 60%;
-	<!---width: 960px;--->
-    overflow: scroll;
-	background-color: #222222;
-}
-body {
-  margin: 0;
-  font-family: Courier, Courier, sans-serif;
-}
-
-.header {
-  text-align: center;
-  padding: 32px;
-}
-
-.row {
-  display: -ms-flexbox; /* IE 10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE 10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-
-
-.column {
-  -ms-flex: 20%; /* IE 10 */
-  flex: 20%;
-  padding: 0 10px;
-}
-
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
-
-
-.centered {
-  position: relative;
-  left: 50%;
-  transform: translate(-50%);
-}
-
-.row4{
-
-	display: -ms-flexbox; /* IE 10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE 10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-  margin: auto;
-	width: 80%;
-}
-
-
-
-
-
-.gameIcon {
-	font-family: Courier, Courier, sans-serif;
-	text-align: center;
-	border-radius: 25px;
-	background-color: #1993C6;
-	border-color: #222222;
-	border-style: solid;
-	border-width: 5px;
-
-}
-
-.gameIcon img{
-	 padding: 0 8px;
-	 border-radius: 25px;
-
-}
-
-
-h1, h2, p {
-	color: white;
-
-}
-
-p {
-	padding-bottom: 5px;
-}
-
-.grow { transition: all .2s ease-in-out; background-color: #1993C6;}
-.grow:hover { transform: scale(1.05); background-color: #38A1CE; }
-
-.grow .projGif{display: none;}
-.grow:hover .projGif{ display:block;}
-
-.grow img{display: block;}
-.grow:hover img{ display:none;}
-
-
-h3 {
-	color: white;
-}
-
-ul{
-padding-left: 0px;
-}
-
-li {
-  display: inline;
-
-}
-a:link, a:visited {
-  background-color: #1993C6;
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-
-a:hover, a:active {
-  background-color: #38A1CE;
-}
-
-</style>
-</head>
-<body>
-
-<!-- Header -->
-<div class="header" id="myHeader">
-	<h1>Daniel Kelly's Portfolio</h1>
-	<p>[to be added]@gmail.com<br>07[to be added]</p>
-  <hr>
-  <ul>
-	<li><a href="index.html">Projects</a></li>
-	<li><a href="about.html">About</a></li>
-</ul>
-
-</div>
-
-
-<div class="centered">
-	<div class="row"> 
+	<head>
 	
-	  <div class="column">
-		<div class="gameIcon grow">
-			<img src="Proj1.gif" style="width:100%" class="projGif">
-			<img src="500x500.png" style="width:100%">
-			<h2> Subdolo </h2>
-			<p> Games Engine Architectures <br> UE4 <p>
-		</div>
-	  </div>
-	  
-	  <div class="column">
-		<div class="gameIcon grow">
-			<img src="Proj2.gif" style="width:100%" class="projGif">
-			<img src="500x500.png" style="width:100%">
-			<h2> Physics and AI Prototype </h2>
-			<p> Physics and AI <br> UE4 <p>
-		</div>
-	  </div>
-	  
-	  <div class="column">
-		<div class="gameIcon grow">
-			<img src="Proj1.gif" style="width:100%" class="projGif">
-			<img src="500x500.png" style="width:100%">
-			<h2> FYP </h2>
-			<p> Final Year Project <br> Unity <p>
-		</div>
-	  </div>
-	  
-	  <div class="column">
-		<div class="gameIcon grow">
-			<img src="Proj2.gif" style="width:100%" class="projGif">
-			<img src="500x500.png" style="width:100%">
-			<h2> Dolphin Animation </h2>
-			<p> Games Content Production <br> 3DS Max <p>
-		</div>
-	  </div>
-	  
-	</div>
-	
-	<br>
-	<div class="row4"> 
-	
-	  <div class="column">
-		<div class="gameIcon grow">
-			<img src="Proj2.gif" style="width:100%" class="projGif">
-			<img src="500x500.png" style="width:100%">
-			<h2> Sixth Form Project </h2>
-			<p> Computer Science Project <br> Unity <p>
-		</div>
-	  </div>
-	  
-	  <div class="column">
-		<div class="gameIcon grow">
-			<img src="Proj1.gif" style="width:100%" class="projGif">
-			<img src="500x500.png" style="width:100%">
-			<h2> Minesweeper </h2>
-			<p> Minesweeper & AI <br> Python <p>
-		</div>
-	  </div>
-	  
-	  <div class="column">
-		<div class="gameIcon grow">
-			<img src="Proj2.gif" style="width:100%" class="projGif">
-			<img src="500x500.png" style="width:100%">
-			<h2> Game of Life </h2>
-			<p> John Conway's Game of Life <br> Python <p>
-		</div>
-	  </div>
-	  
-	</div>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="mystyle.css">
+		
+	</head>
 
-<br>
-<div class="row"> 
-	
-	  <div class="column">
-		<div class="gameIcon grow">
-			<img src="Proj1.gif" style="width:100%" class="projGif">
-			<img src="500x500.png" style="width:100%">
-			<h2> Python Compilation </h2>
-			<p> Compilation of early Python projects <br> Python <p>
-		</div>
-	  </div>
-	  
-	  <div class="column">
-		<div class="gameIcon grow">
-			<img src="Proj2.gif" style="width:100%" class="projGif">
-			<img src="500x500.png" style="width:100%">
-			<h2> Solar System </h2>
-			<p> Early prototype of solar system exploration game <br> Python <p>
-		</div>
-	  </div>
-	  
-	  <div class="column">
-		<div class="gameIcon grow">
-			<img src="Proj1.gif" style="width:100%" class="projGif">
-			<img src="500x500.png" style="width:100%">
-			<h2> Fire and Ice </h2>
-			<p> Early prototype of first computer science project idea <br> Python <p>
-		</div>
-	  </div>
-	  
-	  <div class="column">
-		<div class="gameIcon grow">
-			<img src="Proj2.gif" style="width:100%" class="projGif">	
-			<img src="500x500.png" style="width:100%">
-			<h2> Binary Tree Visualiser </h2>
-			<p> Graphical representation of a binary tree <br> Python <p>
-		</div>
-	  </div>
-	  
-	</div>
-	
-</div>
+	<body>
+
+		<header>
+
+			<h1>Daniel Kelly's Portfolio</h1>
+			<p>[to be added]@gmail.com<br>07[to be added]</p>
+			<hr>
+			<nav>
+				<ul>
+					<li><a href="index.html">Projects</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+			</nav>
+
+		</header>
 
 
+		<section class="projectsTable">
+			
+			<div class="row"> 
 
-<script>
+				<div class="column">
+					<div class="gameIcon grow">
+						<img src="Proj1.gif" class="projGif">
+						<img src="500x500.png">
+						<h2> Subdolo </h2>
+						<p> Games Engine Architectures <br> UE4 </p>
+					</div>
+				</div>
 
-</script>
+				<div class="column">
+					<div class="gameIcon grow">
+						<img src="Proj2.gif"class="projGif">
+						<img src="500x500.png">
+						<h2> Physics and AI Prototype </h2>
+						<p> Physics and AI <br> UE4 </p>
+					</div>
+				</div>
 
-<footer>
+				<div class="column">
+					<div class="gameIcon grow">
+						<img src="Proj1.gif" class="projGif">
+						<img src="500x500.png">
+						<h2> FYP </h2>
+						<p> Final Year Project <br> Unity </p>
+					</div>
+				</div>
+
+				<div class="column">
+					<div class="gameIcon grow">
+						<img src="Proj2.gif" class="projGif">
+						<img src="500x500.png">
+						<h2> Dolphin Animation </h2>
+						<p> Games Content Production <br> 3DS Max </p>
+					</div>
+				</div>
+
+			</div>
+
+			
+			<div class="row rowSmall"> 
+
+				<div class="column">
+					<div class="gameIcon grow">
+						<img src="Proj2.gif" class="projGif">
+						<img src="500x500.png">
+						<h2> Sixth Form Project </h2>
+						<p> Computer Science Project <br> Unity </p>
+					</div>
+				</div>
+
+				<div class="column">
+					<div class="gameIcon grow">
+						<img src="Proj1.gif" class="projGif">
+						<img src="500x500.png">
+						<h2> Minesweeper </h2>
+						<p> Minesweeper & AI <br> Python </p>
+					</div>
+				</div>
+
+				<div class="column">
+					<div class="gameIcon grow">
+						<img src="Proj2.gif" class="projGif">
+						<img src="500x500.png">
+						<h2> Game of Life </h2>
+						<p> John Conway's Game of Life <br> Python </p>
+					</div>
+				</div>
+
+			</div>
+
+			
+			<div class="row"> 
+
+				<div class="column">
+					<div class="gameIcon grow">
+						<img src="Proj1.gif" class="projGif">
+						<img src="500x500.png">
+						<h2> Python Compilation </h2>
+						<p> Compilation of early Python projects <br> Python </p>
+					</div>
+				</div>
+
+				<div class="column">
+					<div class="gameIcon grow">
+						<img src="Proj2.gif" class="projGif">
+						<img src="500x500.png">
+						<h2> Solar System </h2>
+						<p> Early prototype of solar system exploration game <br> Python </p>
+					</div>
+				</div>
+
+				<div class="column">
+					<div class="gameIcon grow">
+						<img src="Proj1.gif" class="projGif">
+						<img src="500x500.png">
+						<h2> Fire and Ice </h2>
+						<p> Early prototype of first computer science project idea <br> Python </p>
+					</div>
+				</div>
+
+				<div class="column">
+					<div class="gameIcon grow">
+						<img src="Proj2.gif" class="projGif">	
+						<img src="500x500.png">
+						<h2> Binary Tree Visualiser </h2>
+						<p> Graphical representation of a binary tree <br> Python </p>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
 
 
-</footer>
+		<footer>
+			<hr>
+			<h3> Website created by Daniel Kelly </h3>
+		</footer>
 
-<br>
-<hr>
+	</body>
 
-<h3> Website created by Daniel Kelly </h3>
-
-<br>
-</body>
 </html>
